@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #050505;
+  --foreground: #ffffff;
+  --card: #101318;
+  --card-border: #242A35;
+  --electric: #00A8FF;
+  --royal: #1265C8;
+  --teal: #20C5B5;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0d14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #242A35;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00A8FF;
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: rgba(16, 19, 24, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(36, 42, 53, 0.8);
+}
+
+.glass-nav {
+  background: rgba(5, 5, 5, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(36, 42, 53, 0.6);
+}
+
+/* Futuristic Glows */
+.electric-glow {
+  box-shadow: 0 0 25px rgba(0, 168, 255, 0.25);
+}
+
+.electric-glow-hover:hover {
+  box-shadow: 0 0 35px rgba(0, 168, 255, 0.4);
+  border-color: rgba(0, 168, 255, 0.5);
+}
+
+.text-gradient-electric {
+  background: linear-gradient(135deg, #ffffff 0%, #00A8FF 60%, #20C5B5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-blue {
+  background: linear-gradient(135deg, #1265C8 0%, #00A8FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.radial-bg-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(0, 168, 255, 0.12) 0%, rgba(5, 5, 5, 0) 70%);
+}
